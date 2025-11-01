@@ -1,0 +1,33 @@
+# Python
+# ---
+# Python'un derlenmiş bytecode dosyaları
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Sanal Ortam (Virtual Environment)
+# ---
+# Kütüphanelerin kurulu olduğu ve GİGABAYTLARCA yer tutabilen
+# venv klasörünü ASLA git'e göndermemeliyiz.
+venv/
+
+# IDE ve Editör Ayarları
+# ---
+# Kişisel editör ayarlarımız (VS Code, PyCharm vb.)
+.vscode/
+.idea/
+
+# Modeller ve Veri Setleri
+# ---
+# YOLOv8 modelleri (genellikle .pt uzantılıdır)
+# Bunlar indirilir, repoya yüklenmez.
+*.pt
+*.engine
+
+# Proje Raporu / Log Dosyaları
+# ---
+# Proje planımızda belirttiğimiz .csv ve .txt log çıktıları
+*.log
+*.csv
+*.txt

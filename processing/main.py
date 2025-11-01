@@ -2,7 +2,7 @@ import cv2
 from guardian_processor import GuardianProcessor
 
 # --- Global Ayarlar ---
-YOLO_MODEL_PATH = "ppe.pt" 
+YOLO_MODEL_PATH = "best.pt" 
 KAYNAK = 0
 WINDOW_NAME = "Guardian AI - (Refactored)" # <-- Pencere adını sabitle
 

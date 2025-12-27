@@ -5,6 +5,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+violations/
 
 # Sanal Ortam (Virtual Environment)
 # ---
@@ -24,6 +25,11 @@ venv/
 # Bunlar indirilir, repoya yüklenmez.
 *.pt
 *.engine
+
+# Video Dosyaları
+# ---
+# Test ve işleme videoları
+*.mp4
 
 # Proje Raporu / Log Dosyaları
 # ---

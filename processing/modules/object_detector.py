@@ -14,8 +14,13 @@ class YoloDetector:
             raise e
 
     def detect_objects(self, frame):
-        """Verilen bir kare üzerinde nesne tespiti yapar."""
-        results = self.model(frame)
+        """YOLO modelini kullanarak nesneleri algılar."""
+        results = self.model(
+            frame, 
+            conf=0.4,      # Minimum güven skoru (0.3'ten artırıldı)
+            iou=0.3,       # Daha agresif NMS (overlap azaltıldı)
+            max_det=30     # Maksimum deteksiyon sayısı
+        )
         return results[0]
 
     def draw_detections(self, frame, results):
